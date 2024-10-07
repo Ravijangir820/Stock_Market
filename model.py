@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.metrics import accuracy_score
 from search import search_file
 # Load the stock price data
-# data = pd.read_csv("DataSet/ADANIENT.csv")
+
 file_name = input("Enter the file name to search for (e.g., 'myfile.txt'): ")
 search_path = None
 search_path = search_path if search_path else None
