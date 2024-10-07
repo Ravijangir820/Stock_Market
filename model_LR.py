@@ -17,7 +17,7 @@ print(file_path)
 data = pd.read_csv(file_path[0])
 
 # Extract features and target variable
-X = data[['Date','High','Low','Close','Open','Adj Close','Volume']]  # Replace with your desired features 
+X = data[['Date','High','Low','Volume']]  # Replace with your desired features  ,'Close','Open','Adj Close'
 y = data['Close']
 
 # Split data into training and testing sets
@@ -43,7 +43,7 @@ print("Mean Squared Error:", mse)
 
 # Plot the actual vs. predicted values
 plt.figure(figsize=(12, 6))
-plt.scatter(date, y_test, color='blue', label='Actual')
+plt.plot(date, y_test, color='blue', label='Actual')
 plt.plot(date, y_pred, color='red', label='Forecast')
 plt.title('Stock Price Prediction')
 plt.xlabel('Date')
