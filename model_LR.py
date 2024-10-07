@@ -17,7 +17,7 @@ print(file_path)
 data = pd.read_csv(file_path[0])
 
 # Extract features and target variable
-X = data[['Date','High','Low','Volume']]  # Replace with your desired features  ,'Close','Open','Adj Close'
+X = data[['Date','High','Low','Open','Adj Close','Volume']]  # Replace with your desired features  ,'Close'
 y = data['Close']
 
 # Split data into training and testing sets
